@@ -29,27 +29,27 @@ SOFTWARE.
 const promoPopup = document.getElementsByClassName('promo')[0];
 const promoPopupClose = document.getElementsByClassName('promo-close')[0];
 
-if (isMobile()) {
-    setTimeout(() => {
-        promoPopup.style.display = 'table';
-    }, 20000);
-}
+// if (isMobile()) {
+//     setTimeout(() => {
+//         promoPopup.style.display = 'table';
+//     }, 20000);
+// }
 
-promoPopupClose.addEventListener('click', e => {
-    promoPopup.style.display = 'none';
-});
+// promoPopupClose.addEventListener('click', e => {
+//     promoPopup.style.display = 'none';
+// });
 
-const appleLink = document.getElementById('apple_link');
-appleLink.addEventListener('click', e => {
-    ga('send', 'event', 'link promo', 'app');
-    window.open('https://apps.apple.com/us/app/fluid-simulation/id1443124993');
-});
+// const appleLink = document.getElementById('apple_link');
+// appleLink.addEventListener('click', e => {
+//     ga('send', 'event', 'link promo', 'app');
+//     window.open('https://apps.apple.com/us/app/fluid-simulation/id1443124993');
+// });
 
-const googleLink = document.getElementById('google_link');
-googleLink.addEventListener('click', e => {
-    ga('send', 'event', 'link promo', 'app');
-    window.open('https://play.google.com/store/apps/details?id=games.paveldogreat.fluidsimfree');
-});
+// const googleLink = document.getElementById('google_link');
+// googleLink.addEventListener('click', e => {
+//     ga('send', 'event', 'link promo', 'app');
+//     window.open('https://play.google.com/store/apps/details?id=games.paveldogreat.fluidsimfree');
+// });
 
 // Simulation section
 
@@ -112,8 +112,8 @@ if (!ext.supportLinearFiltering) {
     config.BLOOM = false;
     config.SUNRAYS = false;
 }
-
-startGUI();
+// !!!!!!!!!!!!!!!!!!!!! GUI !!!!!!!!!!!!!!!!!
+// startGUI();
 
 function getWebGLContext (canvas) {
     const params = { alpha: true, depth: false, stencil: false, antialias: false, preserveDrawingBuffer: false };

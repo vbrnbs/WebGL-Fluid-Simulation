@@ -21,7 +21,7 @@
         <meta property="og:url" content="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">
         <meta property="og:image" content="https://paveldogreat.github.io/WebGL-Fluid-Simulation/logo.png">
 
-        <script type="text/javascript" src="dat.gui.min.js"></script>
+        <script type="text/javascript" src="dat.gui.min.js" hidden></script>
         <style>
             @font-face {
                 font-family: 'iconfont';
@@ -50,6 +50,7 @@
             }
 
             .dg {
+                /* display: none; */
                 opacity: 0.9;
             }
 
@@ -196,28 +197,6 @@
     </head>
     <body>
         <canvas></canvas>
-
-        <!-- Mother of God, pls forgive me -->
-        <div class="promo">
-            <div class="promo-middle">
-                <div class="promo-content">
-                    <div class="promo-header">
-                        <span class="promo-close">&times;</span>
-                    </div>
-                    <div class="promo-body">
-                        <p>Try Fluid Simulation app!</p>
-                        <div class="links-container">
-                            <a class="link" id="apple_link" target="_blank">
-                                <img class="link-img" alt="Download on the App Store" src="app_badge.png"/>
-                            </a>
-                            <a class="link" id="google_link" target="_blank">
-                                <img class="link-img" alt="Get it on Google Play" src="gp_badge.png"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <script src="./script.js"></script>
     </body>
